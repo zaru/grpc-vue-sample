@@ -3,11 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "node src/sample.js",
+    "ts-client": "ts-node src/client.ts",
+    "ts-server": "ts-node src/server.ts",
+    "serve": "vue-cli-service serve --https",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "google-protobuf": "^3.6.1",
+    "grpc": "^1.16.1",
+    "grpc-web-client": "^0.7.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
@@ -17,6 +23,8 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0-0",
+    "grpc-tools": "^1.6.6",
+    "grpc_tools_node_protoc_ts": "^2.4.1",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
